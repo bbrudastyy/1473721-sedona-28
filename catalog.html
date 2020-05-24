@@ -16,44 +16,30 @@
 </header>
 <main>
   <section>
-    <form>
+    <form action="https://echo.htmlacademy.ru" method="post">
       <div>
         <h2>Инфраструктура:</h2>
-        <label>
-          Бассейн
-          <input type="checkbox" checked>
-        </label>
-        <label>
-          Парковка
-          <input type="checkbox">
-        </label>
-        <label>
-          Wi-Fi
-          <input type="checkbox">
-        </label>
+        <label for="pool"><span>Бассейн</span></label>
+          <input type="checkbox" id="pool" name="pool" checked>
+        <label for="parking"><span>Парковка</span></label>
+          <input type="checkbox" id="parking" name="parking">
+        <label for="wifi"><span>Wi-Fi</span></label>
+          <input type="checkbox" id="wifi" name="wifi">
       </div>
       <div>
         <h2>Тип жилья:</h2>
-        <label>
-          Гостиница
-          <input type="checkbox" checked>
-        </label>
-        <label>
-          Мотель
-          <input type="checkbox" checked>
-        </label>
-        <label>
-          Апартаменты
-          <input type="checkbox" checked>
-        </label>
+        <label for="hotel"><span>Гостиница</span></label>
+          <input type="checkbox" id="hotel" name="hotel" checked>
+        <label for="motel"><span>Мотель</span></label>
+          <input type="checkbox" id="motel" name="motel" checked>
+        <label for="apartments"><span>Апартаменты</span></label>
+          <input type="checkbox" id="apartments" name="apartments" checked>
       </div>
       <div>
-        <label>
-          <span>Стоимость в сутки:</span>
-          от 0<input type="range" min="0" max="3000"> до 3000
-        </label>
+        <label for="price"><span>Стоимость в сутки:</span></label>
+          от 0<input type="range" id="price" name="price" min="0" max="3000"> до 3000
       </div>
-      <button>Показать</button>
+      <button type="submit">Показать</button>
     </form>
   </section>
   <section>
