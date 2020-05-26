@@ -2,7 +2,10 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -10,25 +13,29 @@
   <header>
     <nav>
       <ul>
-        <li><a href="">Информация</a></li>
-        <li><a href="">Фото и видео</a></li>
-        <li><a href="">Карта Штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+        <li class="site-navigation"><a href="">Информация</a></li>
+        <li class="site-navigation"><a href="">Фото и видео</a></li>
+        <li class="site-navigation"><a href="">Карта Штата</a></li>
+        <li class="site-navigation"><a href="catalog.html">Гостиницы</a></li>
       </ul>
-      <a><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона"></a>
+      <a><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона" /></a>
     </nav>
   </header>
   <main>
-    <div><img src="img/intro-welcome.svg" width="457" height="351" alt="Логотип приветствия в Седону"></div>
+    <div class="intro-image-color">
+      <img src="img/intro-welcome.svg" width="457" height="351" alt="Логотип приветствия в Седону" />
+    </div>
     <section>
       <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <p class="causes">
+        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+      </p>
       <ol>
         <li>
           <p>Настоящий городок</p>
           <span>— №1 —</span>
           <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="img/building.jpg" width="800" height="256" alt="Фотография здания">
+          <img src="img/building.jpg" width="800" height="256" alt="Фотография здания" />
           <ul>
             <li>
               <p>Жильё</p>
@@ -45,7 +52,7 @@
           </ul>
         </li>
         <li>
-          <img src="img/canyon.jpg" width="800" height="256" alt="Фотография каньона">
+          <img src="img/canyon.jpg" width="800" height="256" alt="Фотография каньона" />
           <p>Там есть Мост дьявола</p>
           <span>— №2 —</span>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -68,55 +75,81 @@
       </ol>
     </section>
     <section>
-      <h2>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button type="button">Поиск гостиницы в седоне</button>
+      <h2 class="interest">Заинтересовались?</h2>
+      <p class="">
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+        предложения гостиниц в седоне
+      </p>
+      <button class="search" type="button">Поиск гостиницы в седоне</button>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label for="start"><span>Дата заезда:</span></label>
-          <input type="text" id="start" name="trip-start" value="24 апреля 2017">
-          <button type="button"><img src=""><span class="visually-hidden">Иконка календаря</span></button>
+          <label for="start"><span class="form-text">Дата заезда:</span></label>
+          <input type="text" class="form-date" id="start" name="trip-start" value="24 апреля 2017" />
+          <button type="button">
+            <img src="" /><span class="visually-hidden">Иконка календаря</span>
+          </button>
         </p>
         <p>
-          <label for="end"><span>Дата выезда:</span></label>
-          <input type="text" id="end" name="trip-end" value="4 июля 2017">
-          <button type="button"><img src=""><span class="visually-hidden">Иконка календаря</span></button>
+          <label for="end"><span class="form-text">Дата выезда:</span></label>
+          <input type="text" class="form-date" id="end" name="trip-end" value="4 июля 2017" />
+          <button type="button">
+            <img src="" /><span class="visually-hidden">Иконка календаря</span>
+          </button>
         </p>
         <p>
-          <label for="adults"><span>Взрослые:</span></label>
-          <button type="button"><img src=""><span class="visually-hidden">Иконка минус</span></button>
-          <input type="text" id="adults" name="adults" min="0" value="0">
-          <button type="button"><img src=""><span class="visually-hidden">Иконка плюс</span></button>
+          <label for="adults"><span class="form-text">Взрослые:</span></label>
+          <button type="button">
+            <img src="" /><span class="visually-hidden">Иконка минус</span>
+          </button>
+          <input type="text" class="amount" id="adults" name="adults" min="0" value="0" />
+          <button type="button">
+            <img src="" /><span class="visually-hidden">Иконка плюс</span>
+          </button>
         </p>
         <p>
-          <label for="children"><span>Дети:</span></label>
-          <button type="button"><img src=""><span class="visually-hidden">Иконка минус</span></button>
-          <input type="text" id="children" name="children" min="0" value="0">
-          <button type="button"><img src=""><span class="visually-hidden">Иконка плюс</span></button>
+          <label for="children"><span class="form-text">Дети:</span></label>
+          <button type="button">
+            <img src="" /><span class="visually-hidden">Иконка минус</span>
+          </button>
+          <input type="text" class="amount" id="children" name="children" min="0" value="0" />
+          <button type="button">
+            <img src="" /><span class="visually-hidden">Иконка плюс</span>
+          </button>
         </p>
-        <button type="submit">Найти</button>
+        <button class="search" type="submit">Найти</button>
       </form>
-      <img src="img/map.png" width="1199" height="594" alt="Карта места расположения">
+      <img src="img/map.png" width="1199" height="594" alt="Карта места расположения" />
     </section>
   </main>
   <footer>
     <section>
       <h2 class="visually-hidden">Информация</h2>
-      <p>#visitsedona</p>
-      <p>ТЕЛ:<a href="tel:+74956660166"> +7(495) 666-01-66</a></p>
+      <p class="footer-text">#visitsedona</p>
+      <p class="footer-text">
+        ТЕЛ:<a class="footer-link" href="tel:+74956660166">
+          +7(495) 666-01-66</a>
+      </p>
     </section>
     <section>
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">You-Tube</a></li>
+        <li class="list-footer">
+          <a class="footer-link" href="">Twitter</a>
+        </li>
+        <li class="list-footer">
+          <a class="footer-link" href="">Facebook</a>
+        </li>
+        <li class="list-footer">
+          <a class="footer-link" href="">You-Tube</a>
+        </li>
       </ul>
     </section>
     <section>
       <h2 class="visually-hidden">Разработка</h2>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41"
-          alt="Логотип HTML Academy">Website by HTML Academy</a>
+      <a class="development" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
+          width="115" height="41" alt="Логотип HTML Academy" />Website by <span class="visually-hidden">HTML
+          Academy</span>
+      </a>
     </section>
   </footer>
 </body>

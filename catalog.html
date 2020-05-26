@@ -2,19 +2,24 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>HTML Academy: Седона</title>
 </head>
 
 <body>
   <header>
-    <ul>
-      <li><a href="">Информация</a>></li>
-      <li><a href="">Фото и видео</a></li>
-      <li><a href="">Карта Штата</a></li>
-      <li><a href="catalog.html">Гостиницы</a></li>
-    </ul>
-    <a href="index.html"><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона"></a>
+    <nav>
+      <ul>
+        <li class="site-navigation"><a href="">Информация</a></li>
+        <li class="site-navigation"><a href="">Фото и видео</a></li>
+        <li class="site-navigation"><a href="">Карта Штата</a></li>
+        <li class="site-navigation"><a href="#">Гостиницы</a></li>
+      </ul>
+      <a href="index.html"><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона" /></a>
+    </nav>
   </header>
   <main>
     <section>
@@ -59,19 +64,19 @@
     <section>
       <h2 class="visually-hidden">Список гостиниц</h2>
       <article>
-        <div>
+        <div class="search-build-image">
           <img src="img/amara.jpg" width="135" height="90" alt="Фотография гостиницы Amara Resort & Spa">
         </div>
         <div>
-          <a href="">
-            <h3>Amara Resort & Spa</h3>
+          <a class="build-link" href="">
+            <h3 class="build-name">Amara Resort & Spa</h3>
           </a>
           <p>Гостиница</p>
           <p>От 4000 Р.</p>
         </div>
         <div>
-          <a href="">Подробнее</a>
-          <a href="">Забронировать</a>
+          <a class="form-link-text" href="">Подробнее</a>
+          <a class="form-link-text" href="">Забронировать</a>
         </div>
         <div>
           <p>4 звезды</p>
@@ -79,42 +84,42 @@
         </div>
       </article>
       <article>
-        <div>
+        <div class="search-build-image">
           <img src="img/desert.jpg" width="135" height="90" alt="Фотография мотеля Desert Quail In">
         </div>
         <div>
           <div>
-            <a href="">
-              <h3>Desert Quail Inn</h3>
+            <a class="build-link" href="">
+              <h3 class="build-name">Desert Quail Inn</h3>
             </a>
             <p>Мотель</p>
             <p>От 3000 Р.</p>
           </div>
           <div>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
+            <a class="form-link-text" href="">Подробнее</a>
+            <a class="form-link-text" href="">Забронировать</a>
           </div>
         </div>
         <div>
           <p>3 звезды</p>
-          <p>Рейтинг: 8,9</p>
+          <p class="raiting">Рейтинг: 8,9</p>
         </div>
       </article>
       <article>
-        <div>
+        <div class="search-build-image">
           <img src="img/villas.jpg" width="135" height="90" alt="Фото Объекта">
         </div>
         <div>
           <div>
-            <a href="">
-              <h3>Villas at Poco Diablo</h3>
+            <a class="build-link" href="">
+              <h3 class="build-name">Villas at Poco Diablo</h3>
             </a>
             <p>Апартаменты</p>
             <p>От 2000 Р.</p>
           </div>
           <div>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
+            <a class="form-link-text" href="">Подробнее</a>
+            <a class="form-link-text" href="">Забронировать</a>
           </div>
         </div>
         <div>
@@ -127,21 +132,32 @@
   <footer>
     <section>
       <h2 class="visually-hidden">Информация</h2>
-      <p> #visitsedona</p>
-      <p>ТЕЛ:<a href="tel:+74956660166"> +7(495) 666-01-66</a></p>
+      <p class="footer-text">#visitsedona</p>
+      <p class="footer-text">
+        ТЕЛ:<a class="footer-link" href="tel:+74956660166">
+          +7(495) 666-01-66</a>
+      </p>
     </section>
     <section>
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">You-Tube</a></li>
+        <li class="list-footer">
+          <a class="footer-link" href="">Twitter</a>
+        </li>
+        <li class="list-footer">
+          <a class="footer-link" href="">Facebook</a>
+        </li>
+        <li class="list-footer">
+          <a class="footer-link" href="">You-Tube</a>
+        </li>
       </ul>
     </section>
     <section>
       <h2 class="visually-hidden">Разработка</h2>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41"
-          alt="Логотип HTML Academy">Website by HTML Academy</a>
+      <a class="development" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
+          width="115" height="41" alt="Логотип HTML Academy" />Website by <span class="visually-hidden">HTML
+          Academy</span>
+      </a>
     </section>
   </footer>
 </body>

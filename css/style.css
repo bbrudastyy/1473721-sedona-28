@@ -1,0 +1,156 @@
+:root {
+  --basic-white: #FFFFFF;
+  --basic-blue: #81B3D2;
+  --basic-gray: #EEEEEE;
+  --basic-brown: #766357;
+  --light-black: #333333;
+  --basic-black: #000000;
+  --raiting-color: #F2F2F2;
+  --raiting-text-color: #666666;
+  --footer-color: rgba(255, 255, 255, 0.9);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  color: var(--light-black);
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.site-navigation,
+.list-footer {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 26px;
+
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+
+}
+
+p.causes {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--light-black);
+}
+
+h2.interest {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+button.search {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-white);
+}
+
+span.form-text,
+.form-date,
+.amount {
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: inherit;
+}
+
+p.footer-text {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+a.footer-link {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+a.development {
+  line-height: 26px;
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+h3.build-name {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+a.build-link {
+  text-decoration: none;
+}
+
+.form-link-text {
+  color: var(--basic-white);
+}
+
+p.raiting {
+  color: var(--raiting-text-color);
+}
+
+.search-build-image {
+  background-color: burlywood;
+}
+
+.intro-image-color {
+  background-color: cadetblue;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--basic-blue);
+  mix-blend-mode: normal;
+
+}
+
+.site-navigation a:active {
+  color: var(--basic-brown);
+}
+
+.form-link-text a:active {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+h3.build-name:hover,
+h3.build-name:focus {
+  color: var(--basic-blue);
+}
+
+h3.build-name:active {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+button.searh:active {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
