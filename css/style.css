@@ -22,11 +22,15 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: var(--light-black);
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
 }
 
 .site-navigation,
@@ -36,30 +40,29 @@ body {
 
 .site-navigation a {
   color: var(--basic-black);
-  text-decoration: none;
   font-weight: bold;
   line-height: 26px;
 }
 
-h1 {
+h1.description-heading {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
 }
 
-p.causes {
+.causes {
   line-height: 26px;
 }
 
-h2.interest {
+.interest-title {
   font-weight: bold;
   font-size: 30px;
   line-height: 24px;
   color: var(--basic-black);
 }
 
-button {
+.btn {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -67,53 +70,43 @@ button {
   text-transform: inherit;
 }
 
-span.form-text,
-.form-date,
+.interest-form-text,
+.interest-form-date,
 .amount {
   font-weight: bold;
   line-height: 26px;
   text-transform: inherit;
 }
 
-p.footer-text {
+.footer-text {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
 }
 
-a.footer-link {
-  text-decoration: none;
+.footer-link {
   color: var(--basic-black);
 }
 
-a.development {
+.development {
   line-height: 26px;
-  text-decoration: none;
   color: var(--basic-black);
 }
 
-h3.build-name {
+.search-build-name {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
 }
 
-a.build-link {
-  text-decoration: none;
-}
-
-.form-link-text {
+.search-link-text {
   color: var(--basic-white);
 }
 
-p.raiting {
+.raiting {
   color: var(--raiting-text-color);
-}
-
-.search-build-image {
-  background-color: burlywood;
 }
 
 .intro-image-color {
@@ -130,23 +123,23 @@ p.raiting {
   color: var(--basic-brown);
 }
 
-.form-link-text a:active {
+.search-link-text a:active {
   mix-blend-mode: normal;
   opacity: 0.3;
 }
 
-h3.build-name:hover,
-h3.build-name:focus {
+.search-build-name:hover,
+.search-build-name:focus {
   color: var(--basic-blue);
 }
 
-h3.build-name:active {
+.search-build-name:active {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
 }
 
-button.searh:active {
+.btn-searh:active {
   mix-blend-mode: normal;
   opacity: 0.3;
 }
