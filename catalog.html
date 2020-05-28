@@ -22,42 +22,55 @@
     </nav>
   </header>
   <main>
-    <section>
+    <section class="filter">
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
-          <legend>Инфраструктура:</legend>
+          <legend class="filter-parameter-name text-white">Инфраструктура:</legend>
           <ul>
-            <li><input type="checkbox" id="pool" name="pool" checked>
-              <label for="pool"><span>Бассейн</span></label></li>
-            <li><input type="checkbox" id="parking" name="parking">
-              <label for="parking"><span>Парковка</span></label></li>
-            <li><input type="checkbox" id="wifi" name="wifi">
-              <label for="wifi"><span>Wi-Fi</span></label></li>
+            <li class="filter-li"><input type="checkbox" id="pool" name="pool" checked>
+              <label for="pool"><span class="text-white">Бассейн</span></label></li>
+            <li class="filter-li"><input type="checkbox" id="parking" name="parking">
+              <label for="parking">
+                <spa class="text-white">>Парковка</spa>
+              </label></li>
+            <li class="filter-li"><input type="checkbox" id="wifi" name="wifi">
+              <label for="wifi">
+                <spa class="text-white">>Wi-Fi</spa>
+              </label></li>
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Тип жилья:</legend>
+          <legend class="filter-parameter-name text-white">Тип жилья:</legend>
           <ul>
-            <li><input type="checkbox" id="hotel" name="hotel" checked>
-              <label for="hotel"><span>Гостиница</span></label></li>
-            <li><input type="checkbox" id="motel" name="motel" checked>
-              <label for="motel"><span>Мотель</span></label></li>
-            <li><input type="checkbox" id="apartments" name="apartments" checked>
-              <label for="apartments"><span>Апартаменты</span></label></li>
+            <li class="filter-li"><input type="checkbox" id="hotel" name="hotel" checked>
+              <label for="hotel">
+                <spa class="text-white">>Гостиница</spa>
+              </label></li>
+            <li class="filter-li"><input type="checkbox" id="motel" name="motel" checked>
+              <label for="motel">
+                <spa class="text-white">>Мотель</spa>
+              </label></li>
+            <li class="filter-li"><input type="checkbox" id="apartments" name="apartments" checked>
+              <label for="apartments">
+                <spa class="text-white">>Апартаменты</spa>
+              </label></li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <fieldset>
+          <legend class="filter-parameter-name text-white">Стоимость в сутки (Р):</legend>
+        </fieldset>
+        <button class="text-white" type="submit">Показать</button>
       </form>
     </section>
-    <section>
-      <p>Найдено: 3</p>
-      <p>Сортировка:</p>
+    <section class="sort">
+      <p class="sort-amount">Найдено: 3</p>
+      <p class="sort-heading">Сортировка:</p>
       <ul>
-        <li><a href="">По цене</a></li>
-        <li><a href="">По типу</a></li>
-        <li><a href="">По рейтингу</a></li>
-        <li><a href="">По возрастанию</a></li>
-        <li><a href="">По убыванию</a></li>
+        <li class="sort-li"><a href="">По цене</a></li>
+        <li class="sort-li"><a href="">По типу</a></li>
+        <li class="sort-li"><a href="">По рейтингу</a></li>
+        <li class="sort-li"><a class="sort-arrow" href="">По возрастанию</a></li>
+        <li class="sort-li"><a class="sort-arrow" href="">По убыванию</a></li>
         <!-- Добавить стрелочки через стили -->
       </ul>
     </section>

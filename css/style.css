@@ -55,6 +55,20 @@ h1.description-heading {
   line-height: 26px;
 }
 
+.causes-heading {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.text-white {
+  color: var(--basic-white);
+}
+
+.causes-li {
+  list-style: none;
+}
+
 .interest-title {
   font-weight: bold;
   font-size: 30px;
@@ -87,6 +101,68 @@ h1.description-heading {
 
 .footer-link {
   color: var(--basic-black);
+}
+
+.filter-parameter-name {
+  font-size: 16px;
+}
+
+.filter-li {
+  list-style: none;
+}
+
+.sort-amount {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.sort-heading {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.sort-li {
+  list-style: none;
+
+}
+
+.sort-li a {
+  font-size: 12px;
+  line-height: 18px;
+  border-bottom: 1px dashed #81B3D2;
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.sort-li a:hover,
+.sort a:focus {
+  border-bottom: 1px dashed #81B3D2;
+  color: var(--basic-blue);
+}
+
+.sort-li a:active {
+  color: var(--basic-black);
+  border-bottom: none;
+}
+
+a.sort-arrow {
+  color: #CACACA;
+  border-bottom: none;
+}
+
+a.sort-arrow:hover,
+a.sort-arrow:focus {
+  color: var(--basic-black);
+  border-bottom: none;
+}
+
+a.sort-arrow:active {
+  color: var(--basic-blue);
+  border-bottom: none;
 }
 
 .development {
