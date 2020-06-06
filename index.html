@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8" />
@@ -12,116 +12,121 @@
 <body>
   <header>
     <nav class="header-nav">
-      <ul>
-        <li class="site-navigation"><a href="">Информация</a></li>
-        <li class="site-navigation"><a href="">Фото и видео</a></li>
-        <li class="site-navigation"><a href="">Карта Штата</a></li>
-        <li class="site-navigation"><a href="catalog.html">Гостиницы</a></li>
+      <ul class="site-navigation">
+        <li class="header-nav-li"><a href="">Информация</a></li>
+        <li class="header-nav-li"><a href="">Фото и видео</a></li>
+        <li class="header-nav-li"><a href="">Карта Штата</a></li>
+        <li class="header-nav-li"><a href="catalog.html">Гостиницы</a></li>
       </ul>
-      <a><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона" /></a>
+      <a><img src="img/logo-sedona.svg" class="main-logo" width="138" height="70" alt="Логотип Седона" /></a>
     </nav>
   </header>
   <main>
-    <div class="intro-image-color">
-      <img src="img/intro-welcome.svg" width="457" height="351" alt="Логотип приветствия в Седону" />
+    <div class="intro-image">
+      <img src="img/intro-welcome.svg" class="intro-welcome" width="457" height="351"
+        alt="Логотип приветствия в Седону" />
     </div>
     <section class="description">
-      <h1 class="description-heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <h1 class="description-heading">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
       <p class="causes">
         Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
       </p>
       <ol class="ol-causes">
         <li class="causes-li">
-          <p class="causes-heading text-white">Настоящий городок</p>
-          <span class="text-white">— №1 —</span>
-          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="img/building.jpg" width="800" height="256" alt="Фотография здания" />
-          <ul>
-            <li class="causes-li">
+          <div class="causes-li-help">
+            <p class="causes-heading text-white">Настоящий<br> городок</p>
+            <span class="text-white numbers">— №1 —</span>
+            <p class="text-white causes-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <img src="img/building.jpg" class="causes-img-help" width="800" height="256" alt="Фотография здания" />
+          <ul class="features-list">
+            <li class="features-li">
               <p class="causes-heading">Жильё</p>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="causes-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="causes-li">
+            <li class="features-li">
               <p class="causes-heading">Еда</p>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p class="causes-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="causes-li">
+            <li class="features-li">
               <p class="causes-heading">Сувениры</p>
-              <p>Не только китайского, но и местного производства!</p>
-            </li class="causes-li">
+              <p class="causes-text">Не только китайского, но и местного производства!</p>
+            </li>
           </ul>
         </li>
         <li class="causes-li">
           <img src="img/canyon.jpg" width="800" height="256" alt="Фотография каньона" />
-          <p class="causes-heading text-white">Там есть Мост дьявола</p>
-          <span class="text-white">— №2 —</span>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div class="causes-li-help">
+            <p class="causes-heading text-white">Там есть<br> Мост дьявола</p>
+            <span class="text-white numbers">— №2 —</span>
+            <p class="text-white causes-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </li>
         <li class="causes-li">
           <p class="causes-heading">Небольшая площадь</p>
-          <span>— №3 —</span>
-          <p>Все достопримечательности находятся очень близко</p>
+          <span class="numbers">— №3 —</span>
+          <p class="causes-text">Все достопримечательности находятся очень близко</p>
         </li>
         <li class="causes-li">
           <p class="causes-heading">Красивая дорога</p>
-          <span>— №4 —</span>
-          <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+          <span class="numbers">— №4 —</span>
+          <p class="causes-text">Ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
         <li class="causes-li">
           <p class="causes-heading">Мало туристов</p>
-          <span>— №5 —</span>
-          <p>Большинство едет в гранд каньон и толпится там</p>
+          <span class="numbers">— №5 —</span>
+          <p class="causes-text">Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ol>
     </section>
     <section class="interest">
       <h2 class="interest-title">Заинтересовались?</h2>
-      <p class="interest-text">
-        Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-        предложения гостиниц в седоне
-      </p>
+      <p class="interest-text">Укажите предполагаемые даты поездки,</p>
+      <p class="interest-text"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="interest-btn btn" type="button">Поиск гостиницы в седоне</button>
+      <img src="img/map.png" width="1199" height="594" alt="Карта места расположения" />
       <form class="interest-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="start"><span class="interest-form-text">Дата заезда:</span></label>
+        <div class="date-start">
+          <label for="start"><span class="interest-form-text form-start">Дата заезда:</span></label>
           <input type="text" class="interest-form-date" id="start" name="trip-start" value="24 апреля 2017" />
           <button class="interest-calendar" type="button">
-            <img src="" /><span class="visually-hidden">Иконка календаря</span>
+            <img src=""/><span class="visually-hidden">Иконка календаря</span>
           </button>
-        </p>
-        <p>
+        </div>
+        <div class="date-end">
           <label for="end"><span class="interest-form-text">Дата выезда:</span></label>
           <input type="text" class="interest-form-date" id="end" name="trip-end" value="4 июля 2017" />
           <button class="interest-calendar" type="button">
             <img src="" /><span class="visually-hidden">Иконка календаря</span>
           </button>
-        </p>
-        <p>
-          <label for="adults"><span class="interest-form-text">Взрослые:</span></label>
-          <button class="interest-btn-minus" type="button">
-            <img src="" /><span class="visually-hidden">Иконка минус</span>
-          </button>
-          <input type="text" class="amount" id="adults" name="adults" min="0" value="0" />
-          <button class="interest-btn-plus" type="button">
-            <img src="" /><span class="visually-hidden">Иконка плюс</span>
-          </button>
-        </p>
-        <p>
-          <label for="children"><span class="interest-form-text">Дети:</span></label>
-          <button class="interest-btn-minus" type="button">
-            <img src="" /><span class="visually-hidden">Иконка минус</span>
-          </button>
-          <input type="text" class="amount" id="children" name="children" min="0" value="0" />
-          <button class="interest-btn-plus" type="button">
-            <img src="" /><span class="visually-hidden">Иконка плюс</span>
-          </button>
-        </p>
+        </div>
+        <div class="people">
+          <label for="adults"><span class="interest-form-text text-adults">Взрослые:</span></label>
+          <div class="counter">
+            <button class="interest-btn-minus" type="button"> -
+              <img src="" /><span class="visually-hidden">Иконка минус</span>
+            </button>
+            <input type="text" class="amount" id="adults" name="adults" min="0" value="0" />
+            <button class="interest-btn-plus" type="button"> +
+              <img src="" /><span class="visually-hidden">Иконка плюс</span>
+            </button>
+          </div>
+          <label for="children"><span class="interest-form-text text-children">Дети:</span></label>
+          <div class="counter">
+            <button class="interest-btn-minus" type="button"> -
+              <img src="" /><span class="visually-hidden">Иконка минус</span>
+            </button>
+            <input type="text" class="amount" id="children" name="children" min="0" value="0" />
+            <button class="interest-btn-plus" type="button"> +
+              <img src="" /><span class="visually-hidden">Иконка плюс</span>
+            </button>
+          </div>
+        </div>
         <button class="btn btn-search" type="submit">Найти</button>
       </form>
-      <img src="img/map.png" width="1199" height="594" alt="Карта места расположения" />
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer index">
     <section class="footer-information">
       <h2 class="visually-hidden">Информация</h2>
       <p class="footer-text">#visitsedona</p>
@@ -132,24 +137,23 @@
     </section>
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <ul>
+      <ul class="social">
         <li class="list-footer">
-          <a class="footer-link" href="">Twitter</a>
+          <a class="footer-link-social" href=""></a>
         </li>
         <li class="list-footer">
-          <a class="footer-link" href="">Facebook</a>
+          <a class="footer-link-social" href=""></a>
         </li>
         <li class="list-footer">
-          <a class="footer-link" href="">You-Tube</a>
+          <a class="footer-link-social" href=""></a>
         </li>
       </ul>
     </section>
     <section class="footer-development">
       <h2 class="visually-hidden">Разработка</h2>
-      <a class="development" href="https://htmlacademy.ru/intensive/htmlcss">Website by <span
-          class="visually-hidden">HTML Academy</span>
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
-      </a>
+      <p class="development-text">Website by <span class="visually-hidden">HTML Academy</span></p>
+      <a class="development" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
+          width="115" height="41" alt="Логотип HTML Academy"></a>
     </section>
   </footer>
 </body>
