@@ -26,13 +26,13 @@ window.addEventListener("keydown", function (evt) {
 });
 
 modal.addEventListener("submit", function (evt) {
-    if ((date_start.value === " ") || (date_end.value === " ")) {
+    if ((date_start.value === "") || (date_end.value === "")) {
         alert("Введите дату");
         evt.preventDefault();
     }
     else {
         alert("Отправлено");
-        // evt.preventDefault();
+        evt.preventDefault();
     }
 });
 
