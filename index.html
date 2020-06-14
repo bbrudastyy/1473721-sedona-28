@@ -92,7 +92,8 @@
       <form class="interest-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="date-start">
           <label for="start"><span class="interest-form-text form-start">Дата заезда:</span></label>
-          <input type="text" class="interest-form-date date-start" id="start" name="trip-start" value="24 апреля 2017">
+          <input type="text" class="interest-form-date date-start" id="start" name="trip-start" value="24 апреля 2017"
+            required>
           <button class="interest-calendar" type="button">
             <span class="visually-hidden">Открытие календаря для выбора даты</span>
             <svg class="calendar" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -105,7 +106,7 @@
         </div>
         <div class="date-end">
           <label for="end"><span class="interest-form-text">Дата выезда:</span></label>
-          <input type="text" class="interest-form-date date-end" id="end" name="trip-end" value="4 июля 2017">
+          <input type="text" class="interest-form-date date-end" id="end" name="trip-end" value="4 июля 2017" required>
           <button class="interest-calendar" type="button">
             <span class="visually-hidden">Открытие календаря для выбора даты</span>
             <svg class="calendar" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -119,14 +120,14 @@
         <div class="people">
           <label for="adults"><span class="interest-form-text text-adults">Взрослые:</span></label>
           <div class="counter">
-            <button class="interest-btn-count interest-btn-minus" type="button">
+            <button class="interest-btn-count interest-btn-minus minus-adults" type="button">
               <svg class="count-btn" width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
                 <rect width="12" height="3" />
               </svg>
               <span class="visually-hidden">Уменьшить количество взрослых</span>
             </button>
-            <input type="text" class="amount" id="adults" name="adults" min="0" value="2">
-            <button class="interest-btn-count interest-btn-plus" type="button">
+            <input type="text" class="amount amount-adults" id="adults" name="adults" min="0" value="2">
+            <button class="interest-btn-count interest-btn-plus plus-adults" type="button">
               <svg class="count-btn" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
@@ -136,14 +137,14 @@
           </div>
           <label for="children"><span class="interest-form-text text-children">Дети:</span></label>
           <div class="counter">
-            <button class="interest-btn-count interest-btn-minus" type="button">
+            <button class="interest-btn-count interest-btn-minus minus-children" type="button">
               <svg class="count-btn" width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
                 <rect width="12" height="3" />
               </svg>
               <span class="visually-hidden">Уменьшить количество детей</span>
             </button>
-            <input type="text" class="amount" id="children" name="children" min="0" value="0">
-            <button class="interest-btn-count interest-btn-plus" type="button">
+            <input type="text" class="amount amount-children" id="children" name="children" min="0" value="0">
+            <button class="interest-btn-count interest-btn-plus plus-children" type="button">
               <svg class="count-btn" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
