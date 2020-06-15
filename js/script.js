@@ -1,7 +1,7 @@
 var interest_btn = document.querySelector(".interest-btn");
 var modal = document.querySelector(".interest-form");
-var date_start = modal.querySelector(".date-start");
-var date_end = modal.querySelector(".date-end");
+var date_start = modal.querySelector(".input-date-start");
+var date_end = modal.querySelector(".input-date-end");
 var adults = modal.querySelector(".amount-adults");
 var children = modal.querySelector(".amount-children");
 
@@ -16,6 +16,8 @@ var isStorageSupport = true;
 var storage_adults = "";
 var storage_children = "";
 
+modal.classList.add("interest-form-hidden");
+
 try {
     storage_adults = localStorage.getItem("");
     storage_children = localStorage.getItem("");
@@ -23,6 +25,7 @@ try {
     isStorageSupport = false;
 }
 am.addEventListener("click", function () {
+    count_adults = parseInt(adults.value);
     count_adults = count_adults - 1;
     if (count_adults < 0) {
         count_adults = 0;
@@ -31,11 +34,13 @@ am.addEventListener("click", function () {
 })
 
 ap.addEventListener("click", function () {
+    count_adults = parseInt(adults.value);
     count_adults = count_adults + 1;
     adults.value = count_adults;
 
 })
 cm.addEventListener("click", function () {
+    count_children = parseInt(children.value);
     count_children = count_children - 1;
     if (count_children < 0) {
         count_children = 0;
@@ -43,6 +48,7 @@ cm.addEventListener("click", function () {
     children.value = count_children;
 })
 cp.addEventListener("click", function () {
+    count_children = parseInt(children.value);
     count_children = count_children + 1;
     children.value = count_children;
 })
@@ -74,17 +80,15 @@ window.addEventListener("keydown", function (evt) {
 });
 
 modal.addEventListener("submit", function (evt) {
-    if ((!date_start.value || !date_end.value) || (count_adults === 0 && count_children === 0)) {
+    if ((!date_start.value || !date_end.value) || (parseInt(adults.value) == 0 && parseInt(children.value) == 0) || (parseInt(adults.value) < 0 || parseInt(children.value) < 0)) {
         alert("Проверьте правильность заполненных данных");
         evt.preventDefault();
     }
     else {
-        alert("Отправлено");
         if (isStorageSupport) {
             localStorage.setItem("Amount-adults", adults.value);
             localStorage.setItem("Amount-children", children.value);
         }
-        evt.preventDefault();
     }
 });
 
