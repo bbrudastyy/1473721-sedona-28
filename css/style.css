@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 :root {
   --basic-white: #ffffff;
   --basic-blue: #81b3d2;
@@ -47,6 +54,7 @@ body {
   min-height: 100%;
   width: 1200px;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   background-color: var(--basic-white);
   align-content: start;
@@ -349,8 +357,19 @@ li.header-nav-li:nth-of-type(n+3) {
   width: 568px;
   background: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  -webkit-animation-name: interest-form-show;
   animation-name: interest-form-show;
+  -webkit-animation-duration: 150ms;
   animation-duration: 150ms;
+}
+
+@-webkit-keyframes interest-form-show {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 395px;
+  }
 }
 
 @keyframes interest-form-show {
@@ -681,20 +700,32 @@ legend.text-white {
   background-image: url(../img/checkbox-on.svg);
 }
 
-.input-checkbox:focus+.filter-label::before, .input-checkbox:hover+.filter-label::before {
+.input-checkbox:focus+.filter-label::before {
+  background-image: url(../img/checkbox-off.svg);
+  outline: 3px solid var(--basic-black);
+}
+
+.input-checkbox:hover+.filter-label::before {
   background-image: url(../img/checkbox-off.svg);
 }
 
-.input-checkbox:checked:focus+.filter-label::before, .input-checkbox:checked:hover+.filter-label::before {
+.input-checkbox:checked:focus+.filter-label::before {
+  background-image: url(../img/checkbox-on.svg);
+  outline: 3px solid var(--basic-black);
+}
+
+.input-checkbox:checked:hover+.filter-label::before {
   background-image: url(../img/checkbox-on.svg);
 }
 
 .input-checkbox:disabled+.filter-label::before {
   background-image: url(../img/checkbox-off-disabled.svg);
+  outline: 3px solid var(--basic-black);
 }
 
 .input-checkbox:checked:disabled+.filter-label::before {
   background-image: url(../img/checkbox-on-disabled.svg);
+  outline: 3px solid var(--basic-black);
 }
 
 .filter-price {
@@ -1016,6 +1047,7 @@ a.search-link-text:first-child {
   min-height: 24px;
   padding-top: 3px;
   background-color: var(--basic-blue);
+  vertical-align: middle;
 }
 
 .details:hover, .details:focus {
@@ -1047,6 +1079,7 @@ a.search-link-text:first-child {
   min-height: 24px;
   padding-top: 3px;
   background-color: var(--basic-brown);
+  vertical-align: middle;
 }
 
 .search-raiting {
@@ -1090,6 +1123,7 @@ a.search-link-text:first-child {
   color: var(--raiting-text-color);
   background-color: var(--raiting-color);
   margin-top: 0;
+  vertical-align: middle;
 }
 
 .intro-welcome {

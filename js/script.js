@@ -19,8 +19,8 @@ var storage_children = "";
 modal.classList.add("interest-form-hidden");
 
 try {
-    storage_adults = localStorage.getItem("");
-    storage_children = localStorage.getItem("");
+    storage_adults = localStorage.getItem("Amount-Adults");
+    storage_children = localStorage.getItem("Amount-Children");
 } catch (err) {
     isStorageSupport = false;
 }
@@ -86,8 +86,8 @@ modal.addEventListener("submit", function (evt) {
     }
     else {
         if (isStorageSupport) {
-            localStorage.setItem("Amount-adults", adults.value);
-            localStorage.setItem("Amount-children", children.value);
+            localStorage.setItem("Amount-Adults", adults.value);
+            localStorage.setItem("Amount-Children", children.value);
         }
     }
 });
