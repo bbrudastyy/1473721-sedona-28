@@ -58,6 +58,7 @@ interest_btn.addEventListener("click", function (evt) {
     if (modal.classList.contains("interest-form-hidden")) {
         evt.preventDefault();
         modal.classList.remove("interest-form-hidden");
+        modal.classList.remove("modal-error");
         if (storage_adults || storage_children) {
             adults.value = storage_adults;
             children.value = storage_children;
@@ -75,13 +76,16 @@ window.addEventListener("keydown", function (evt) {
         if (!modal.classList.contains("interest-form-hidden")) {
             evt.preventDefault();
             modal.classList.add("interest-form-hidden");
+            modal.classList.remove("modal-error");
         }
     }
 });
 
 modal.addEventListener("submit", function (evt) {
     if ((!date_start.value || !date_end.value) || (parseInt(adults.value) == 0 && parseInt(children.value) == 0) || (parseInt(adults.value) < 0 || parseInt(children.value) < 0)) {
-        alert("Проверьте правильность заполненных данных");
+        modal.classList.remove("modal-error");
+        modal.offsetWidth = modal.offsetWidth;
+        modal.classList.add("modal-error");
         evt.preventDefault();
     }
     else {
